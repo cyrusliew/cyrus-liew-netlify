@@ -2,8 +2,14 @@ backend:
   name: git-gateway
   branch: master
 
-media_folder: static/img
+#media_folder: static/img
 public_folder: /img
+
+media_library:
+  name: uploadcare
+  config:
+    publicKey: deb1b13c71a778a81272
+    multiple: true
 
 collections:
   - name: "blog"
@@ -18,7 +24,31 @@ collections:
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Tags", name: "tags", widget: "list"}
-
+  - name: "portfolio"
+    label: "Porfolio"
+    folder: "src/pages/porfolio"
+    create: true
+    slug: "{{slug}}"
+    fields:
+    - {label: "Template Key", name: "templateKey", widget: "hidden", default: "portfolio "}
+    - {label: "Title", name: "title", widget: "string"}
+    - {label: "Project date", name: "project-date", widget: "date", format: "DD MMM YY"}
+    - {label: "Content", name: "content", widget: "markdown"}
+    - label: "Project screenshots"
+      name: "screenshots"
+      widget: "image"
+    - {label: "Tags", name: "tags", widget: "list"}
+  - name: "experience"
+    label: "Experience"
+    folder: "src/pages/experience"
+    create: true
+    slug: "{{slug}}"
+    fields:
+    - {label: "Template Key", name: "templateKey", widget: "hidden", default: "experience"}
+    - {label: "Title", name: "title", widget: "string"}
+    - {label: "Company", name: "company", widget: "string"}
+    - {label: "Role", name: "role", widget: "string"}
+    - {label: "Description", name: "description", widget: "text"}
   - name: "pages"
     label: "Pages"
     files:
