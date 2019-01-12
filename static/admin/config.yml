@@ -30,7 +30,7 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
-    - {label: "Template Key", name: "templateKey", widget: "hidden", default: "portfolio "}
+    - {label: "Template Key", name: "templateKey", widget: "hidden", default: "portfolio"}
     - {label: "Title", name: "title", widget: "string"}
     - {label: "Project date", name: "project-date", widget: "date", format: "DD MMM YY"}
     - {label: "Content", name: "content", widget: "markdown"}

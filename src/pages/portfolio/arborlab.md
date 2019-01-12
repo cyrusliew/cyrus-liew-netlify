@@ -1,5 +1,5 @@
 ---
-templateKey: 'portfolio '
+templateKey: portfolio
 title: Arborlab
 project-date: 13 Jan 19
 content: Arborlab is one of the largest scale project I ever worked on.

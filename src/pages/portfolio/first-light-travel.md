@@ -1,5 +1,5 @@
 ---
-templateKey: 'portfolio'
+templateKey: portfolio
 title: First Light Travel
 project-date: Jan 19
 content: First Light Travel is one of the largest project I have worked for.
