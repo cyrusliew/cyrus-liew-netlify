@@ -78,7 +78,7 @@ const Portfolio = ({ data }) => {
   )
 };
 
-Experience.propTypes = {
+Portfolio.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.object,
   }),
