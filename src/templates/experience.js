@@ -1,10 +1,10 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { kebabCase } from 'lodash'
-import Helmet from 'react-helmet'
-import { graphql, Link } from 'gatsby'
-import Layout from '../components/Layout'
-import Content, { HTMLContent } from '../components/Content'
+import React from 'react';
+import PropTypes from 'prop-types';
+import { kebabCase } from 'lodash';
+import Helmet from 'react-helmet';
+import { graphql, Link } from 'gatsby';
+import Layout from '../components/Layout';
+import Content, { HTMLContent } from '../components/Content';
 
 export const ExperienceTemplate = ({
                                    content,
@@ -14,7 +14,7 @@ export const ExperienceTemplate = ({
                                    title,
                                    helmet,
                                  }) => {
-  const PostContent = contentComponent || Content
+  const PostContent = contentComponent || Content;
 
   return (
     <section className="section">
@@ -44,7 +44,7 @@ export const ExperienceTemplate = ({
       </div>
     </section>
   )
-}
+};
 
 ExperienceTemplate.propTypes = {
   content: PropTypes.node.isRequired,
@@ -52,7 +52,7 @@ ExperienceTemplate.propTypes = {
   description: PropTypes.string,
   title: PropTypes.string,
   helmet: PropTypes.object,
-}
+};
 
 const Experience = ({ data }) => {
   const { markdownRemark: experience } = data;
@@ -99,4 +99,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;
